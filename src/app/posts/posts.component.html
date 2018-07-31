@@ -1,0 +1,16 @@
+<app-navbar></app-navbar>
+<div id="banner" class="container-fluid">
+</div>
+<h1>Blog It</h1>
+<div class="container">
+  <div class="row">
+        <div class="card" *ngFor="let post of posts$">
+            <img class="card-img-top" src="assets/image/posts-2.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">{{post.title}}</h5>
+              <p class="card-text">{{post.body}}</p>
+            </div>
+          </div> 
+  </div>
+</div>
+<app-navfoot></app-navfoot>

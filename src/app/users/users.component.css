@@ -1,0 +1,11 @@
+.card{
+    padding: 0;
+    margin: 5px auto;
+}
+ h4 {
+    text-align: center;
+}
+img{
+    width: 300px;
+}
+#banner{background-image:url('/assets/image/members-1.jpg');background-repeat: no-repeat;background-size: 100% 100%;min-height: 400px;margin: 0;padding: 0;}

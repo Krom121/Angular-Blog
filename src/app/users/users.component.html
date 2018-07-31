@@ -1,0 +1,21 @@
+<app-navbar></app-navbar>
+<div id="banner" class="container-fluid">
+</div>
+<h1>Our Members</h1>
+<p>Our most respected members</p>
+<div class="container">
+  <div class="row">
+    <div class="col"></div>
+    <div class="card" *ngFor="let user of users$">
+      <img class="img-fluid" src="https://upload.wikimedia.org/wikipedia/commons/7/72/Default-welcomer.png" alt="">
+      <div class="card-body">
+        <h4 class="card-title">{{user.username}}</h4>
+        <p class="card-text">{{user.website}}</p>
+        <p>{{user.phone}}</p>
+        <p>{{user.email}}</p>
+        <a class="btn btn-success mr-auto d-block" routerLink="/posts">Veiw Comments</a>
+      </div>
+    </div>
+  </div>
+</div>
+<app-navfoot></app-navfoot>
